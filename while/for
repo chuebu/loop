@@ -1,0 +1,52 @@
+//the while loop
+//while something is true, the code in the while loop runs, over and over until that thing is no longer true
+
+var steps = 0;
+while(steps < 4){
+  moveForward();
+  steps++;
+}
+// turnRight();
+//this command turns the robot 90 degrees to the right 
+//click to see a new program, run the program on your board. Where will the robot end up?
+
+var steps = 0;
+while(steps < 4);{
+  moveForward();
+  turnRight();
+  steps++;
+}
+//While loop: 3 parts
+//a counting variable set to an initial value
+//a boolean expression which checks the condition of that variable
+//a statement which increases or decreaes the variable that is being checked. NOTE: if this piece is missing, you may create an infinite loop that neever stops running or can crashyou browser
+// A loop for combines these three parts inton one statement
+
+// A loop is an example of iteration: a repetitive portion of an algorithm which repeats a specified number of times or until a given condition is met
+for (var i=o; i<4; i++){
+  moveForward();
+}; 
+// 
+for(var i=0; i<3; i++){
+  moveForward();
+  turnRight();
+  moveForward();
+  turnLeft();
+}
+//new commands
+canMove(left);
+canMove(right);
+canMove(forward);
+canMove(backward);
+//these evaluate to true or false. they are dependent on the direction that the robot is facing. I
+//
+for(var i=0; i<3; i++){
+  if(canMove(right)){
+    turnRight();
+    moveForward()
+  }
+  turnLeft();
+  if(canMove(forward)){
+    moveForward();
+  }
+}
